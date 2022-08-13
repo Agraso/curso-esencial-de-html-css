@@ -1,21 +1,26 @@
-:root
+:root{
+    font-size: 18px;
+    --black-gray: #212121;
+    --gray20: #212429;
+    --gray: #616161;
+}
 
 body{
-    color: #212121;
+    color: var(--black-gray);
 }
 a{
-    color: #212121;
+    color: var(--black-gray);
 }
 header {
     font-size: 14px;
-    color: #616161;
+    color: var(--gray);
 }
 header a{
-color: #616161;
+color: var(--gray);
 text-decoration: none;
 }
 header a:hover{
-    color: #212121;
+    color: var(--black-gray);
 }
 nav details summary{
     font-weight: bold;
