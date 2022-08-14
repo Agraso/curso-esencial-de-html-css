@@ -1,3 +1,28 @@
+@font-face {
+    font-family: charter;
+    src: url("../charter/charter/otf/Charter\ Regular.otf");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: charter;
+    src: url("../charter/charter/otf/Charter\ Italic.otf");
+    font-style: italic;
+    font-weight: 400;
+}
+@font-face {
+    font-family: charter;
+    src: url("../charter/charter/otf/Charter\ Bold.otf");
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: charter;
+    src: url("../charter/charter/otf/Charter\ Bold\ Italic.otf");
+    font-style: italic;
+    font-weight: bold;
+}
+
 :root{
     font-size: 18px;
     --black-gray: #212121;
@@ -7,6 +32,9 @@
 
 body{
     color: var(--black-gray);
+    font-family: 'Roboto', sans-serif;
+
+    /* font-family: charter; */
 }
 a{
     color: var(--black-gray);
@@ -36,4 +64,8 @@ h2{
 h3{
     font-size: 26px;
     /* font-size: 1.5em; */
+}
+.hero {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, .2), transparent), url("../imagen/patron.png");
+    height: 350px;
 }
