@@ -69,3 +69,20 @@ h3{
     background-image: linear-gradient(to top, rgba(255, 255, 255, .2), transparent), url("../imagen/patron.png");
     height: 350px;
 }
+
+.section-content h3{
+    counter-increment: titlelist;
+}
+
+.section-content h3::before{
+    content: counter(titlelist) ". ";
+}
+
+.section-content h3::after{
+    content: "";
+    width: 75px;
+    height: 4px;
+    background-color: #424242;
+    display: block;
+}
+
