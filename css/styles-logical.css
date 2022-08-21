@@ -46,28 +46,18 @@ a{
 }
 
 .header{
-    position: sticky;
-    inset-block-start: -40px;
+
 }
 
 .header-content{
-    position: relative;
-    inset-block-start: 65px;
+    padding-inline-start: 20px;
 }
 
 header {
+    margin-block-start: 20px;
     font-size: 14px;
     color: var(--white-white);
-    position: absolute;
-    /* top */
-    inset-block-start: 0;
-    /* bottom */
-    inset-block-end: ;
-    /* left */
-    inset-inline-start: -208px ;
-    /* right */
-    inset-inline-end: ;
-    inline-size: 188px;
+
 }
 
 header li{
@@ -89,22 +79,22 @@ nav details summary{
 }
 
 h1 {
-    font-size: 60px; 
+    font-size: 40px; 
     font-weight: 700;
     /* font-size: 3.75em; */
-    margin-block-start: 64px;
+    margin-block-start: 20px;
     margin-block-end: 16px;
 }
 
 h2{
-    font-size: 32px;
+    font-size: 27px;
     font-weight: 700;
     margin-block: 40px;
     /* font-size: 2em; */
 }
 
 h3{
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 600;
     margin-block: 16px;
     /* font-size: 1.5em; */
@@ -135,7 +125,7 @@ p{
 
 .hero {
     background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
-    height: 350px;
+    block-size: 50px;
 }
 
 .section-content img{
@@ -199,4 +189,99 @@ blockquote p{
     padding-inline-end: 16px;
     padding-block-start: 16px;
     padding-block-end: 16px; */
+}
+
+.slider{
+    /* border: 1px solid red; */
+}
+
+.slider-container{
+    /* block-size: 100px; */
+    display: block;
+    overflow: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    font-size: 0;
+    /* border: 1px solid blue; */
+}
+
+.video{
+    margin: 0;
+    /* border: 1px solid green; */
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.slider-bullet-list{
+    text-align: center;
+    margin-block-start: 10px;
+}
+
+.slider-bullet{
+    display: inline-block;
+    inline-size: 15px;
+    block-size: 15px;
+    background: white;
+    border-radius: 50%;
+
+}
+
+.form input{
+    box-sizing: border-box;
+    border: 1px solid var(--white-white);
+    background: #251F24;
+    inline-size: 100%;
+    border-radius: 8px;
+    padding-inline: 16px;
+    padding-block: 12px;
+    color: var(--white-white);
+    font-size: 16px;
+    display: block;
+    margin-block-end: 24px;
+}
+
+.form input[type="submit"] {
+    background:#157EFB;
+    border: none;
+}
+
+.form ::-webkit-input-placeholder{
+    color: var(--white20);
+}
+
+
+@media screen and (min-width: 1350px){
+    h1{
+        font-size: 60px;
+        margin-block-start: 64px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    h3{
+        font-size: 26px;
+    }
+    .header{
+        position: sticky;
+        inset-block-start: -40px;
+    }
+    
+    .header-content{
+        position: relative;
+        inset-block-start: 65px;
+        padding-inline-start: 0;
+    }
+    
+    header {
+        position: absolute;
+        /* top */
+        inset-block-start: 0;
+        inset-inline-start: -208px ;
+        inline-size: 188px;
+        .hero {
+            block-size: 350px;
+        }
+    }
 }
