@@ -47,10 +47,11 @@ a{
 }
 
 header {
+    margin-top: 20px;
+    padding-left: 20px;
     font-size: 14px;
     color: var(--gray);
     width: 188px;
-    position: absolute;
     /* border: 1px solid green;
     background: beige; */
     left: -232px;
@@ -76,8 +77,8 @@ header li{
 }
 
 h1 {
-    font-size: 60px; 
-    margin-top: 64px;
+    font-size: 40px; 
+    margin-top: 20px;
     margin-bottom: 16px;
     font-weight: 400;
     /* font-size: 3.75em; */
@@ -92,14 +93,14 @@ hr{
 }
 
 h2{
-    font-size: 32px;
+    font-size: 27px;
     /* font-size: 2em; */
     margin: 64px 0 40px;
     font-weight: normal;
 }
 
 h3{
-    font-size: 26px;
+    font-size: 22px;
     /* font-size: 1.5em; */
     margin-top: 16px;
     margin-bottom: 24px;
@@ -132,7 +133,7 @@ blockquote span::before{
 }
 
 .header{
-    position: sticky;
+    /* position: sticky; */
     top: 3px;
 }
 
@@ -141,7 +142,7 @@ blockquote span::before{
 }
 
 .main{
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .wrapper{
@@ -154,14 +155,14 @@ blockquote span::before{
 }
 
 .debug{
-    outline: 2px solid green;
+    /* outline: 2px solid green; */
     /* border: 2px solid green !important;
     box-sizing: border-box; */
 }
 
 .hero {
     background-image: linear-gradient(to top, rgba(255, 255, 255, .2), transparent), url("../imagen/patron.png");
-    height: 350px;
+    height: 100px;
 }
 .section-content{
     margin-top: 164px;
@@ -207,3 +208,95 @@ blockquote span::before{
     bottom: 0;
 }
 
+.slider{
+    /* border: 1px solid red; */
+}
+
+.slider-container{
+    /* block-size: 100px; */
+    display: block;
+    overflow: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    font-size: 0;
+    /* border: 1px solid blue; */
+}
+
+.video{
+    margin: 0;
+    /* border: 1px solid green; */
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.slider-bullet-list{
+    text-align: center;
+    margin-block-start: 10px;
+}
+
+.slider-bullet{
+    display: inline-block;
+    inline-size: 15px;
+    block-size: 15px;
+    background: #616161;
+    border-radius: 50%;
+
+}
+
+.form input{
+    box-sizing: border-box;
+    border: 1px solid #616161;
+    background: white;
+    inline-size: 100%;
+    border-radius: 8px;
+    padding-inline: 16px;
+    padding-block: 12px;
+    color: var(--white-white);
+    font-size: 16px;
+    display: block;
+    margin-block-end: 24px;
+}
+
+.form input[type="submit"] {
+    background:#157EFB;
+    border: none;
+}
+
+.form ::-webkit-input-placeholder{
+    color: #424242;
+}
+
+
+@media screen and (min-width: 1350px){
+    h1{
+        font-size: 60px;
+        margin-block-start: 64px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    h3{
+        font-size: 26px;
+    }
+    .header{
+        position: sticky;
+        top: 3px;
+    }
+    
+    .header-content{
+        position: relative;
+        padding-inline-start: 0;
+    }
+    
+    header {
+        position: absolute;
+        width: 188px;
+        left: -232px;
+        top: 64px
+    }
+    .hero {
+        block-size: 350px;
+    }
+}

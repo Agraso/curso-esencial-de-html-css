@@ -280,8 +280,8 @@ blockquote p{
         inset-block-start: 0;
         inset-inline-start: -208px ;
         inline-size: 188px;
-        .hero {
-            block-size: 350px;
-        }
+    }
+    .hero {
+        block-size: 350px;
     }
 }
